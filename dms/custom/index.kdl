@@ -1,0 +1,5 @@
+include "config.kdl"
+include "cursor.kdl"
+include "layout.kdl"
+include "binds.kdl"
+include "windowrules.kdl"

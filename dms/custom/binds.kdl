@@ -1,0 +1,13 @@
+binds {
+  Mod+Alt+A { screenshot show-pointer=false; }
+  Mod+Alt+S { screenshot-screen show-pointer=false; }
+  Mod+Alt+D { spawn-sh "wl-paste | satty -f -"; }
+  Mod+Alt+F hotkey-overlay-title="Record Screen" { spawn "bash" "-c" "$HOME/.config/DankMaterialShell/plugins/ScreenRecorder/record.sh record-screen 0 libx264 30 medium 0 mp4 native $HOME/Videos"; }
+  Mod+Alt+G hotkey-overlay-title="Stop Recording" { spawn "bash" "-c" "pkill -SIGINT wf-recorder 2>/dev/null; $HOME/.config/DankMaterialShell/plugins/ScreenRecorder/record.sh stop"; }
+  Mod+G repeat=false { toggle-overview; }
+  Mod+A { consume-or-expel-window-left; }
+  Mod+D { consume-or-expel-window-right; }
+  Mod+Shift+Q { spawn "sh" "-c" "pid=$(niri msg -j focused-window | jq '.pid'); [ -n \"$pid\" ] && pkill -P $pid 2>/dev/null; kill $pid 2>/dev/null"; }
+  Mod+T hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
+  Mod+B hotkey-overlay-title="Open Chrome" { spawn "google-chrome-stable"; }
+}

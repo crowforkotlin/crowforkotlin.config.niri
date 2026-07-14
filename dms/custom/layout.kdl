@@ -1,0 +1,30 @@
+layout { 
+    gaps 12
+    border {
+        width 2
+    }
+    focus-ring {
+        width 2
+    }
+    shadow {
+        on
+        softness 20
+        spread 2
+        offset x=-4 y=-4
+        color "rgba(0, 0, 0, 0.7)"
+    }
+}
+
+window-rule {
+    geometry-corner-radius 12
+    clip-to-geometry true
+    tiled-state true
+    draw-border-with-background false
+}
+
+overview {
+    workspace-shadow {
+        on
+    }
+    zoom 0.5
+}

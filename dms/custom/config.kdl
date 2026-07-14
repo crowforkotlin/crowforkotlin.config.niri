@@ -1,0 +1,16 @@
+// 修复微信没法输入问题
+environment {
+  XMODIFIERS "@im=fcitx"
+  LANG "zh_CN.UTF-8"
+  LC_CTYPE "en_US.UTF-8"
+  LANGUAGE "zh_CN.UTF-8"
+}
+
+spawn-at-startup "fcitx5" "-d"
+
+// 开启左上角显示NIRI概览
+gestures {
+    hot-corners {
+        top-left
+    }
+}

@@ -1,0 +1,6 @@
+cursor {
+    xcursor-theme "BreezeX-Dark"
+    xcursor-size 36
+    hide-after-inactive-ms 15000
+}
+
