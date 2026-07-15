@@ -1,0 +1,10 @@
+input {
+  mouse {
+
+    // 鼠标速度
+    accel-speed 0.4
+
+    // 禁用鼠标加速 
+    accel-profile "flat"
+  }
+}

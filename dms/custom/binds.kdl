@@ -10,4 +10,6 @@ binds {
   Mod+Shift+Q { spawn "sh" "-c" "pid=$(niri msg -j focused-window | jq '.pid'); [ -n \"$pid\" ] && pkill -P $pid 2>/dev/null; kill $pid 2>/dev/null"; }
   Mod+T hotkey-overlay-title="Open Terminal" { spawn "ghostty"; }
   Mod+B hotkey-overlay-title="Open Chrome" { spawn "google-chrome-stable"; }
+  Mod+Shift+V   hotkey-overlay-title="切换浮动 Toggle floating"    { toggle-window-floating; }
+  Mod+Shift+B hotkey-overlay-title=null { switch-focus-between-floating-and-tiling; }
 }
