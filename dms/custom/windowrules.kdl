@@ -102,5 +102,6 @@ window-rule {
     match app-id="^QQ$"
     match app-id="^wechat$"
     match app-id="^wechat-devtools$"
+    match app-id="^jetbrains-studio$"
     opacity 0.9
 }
