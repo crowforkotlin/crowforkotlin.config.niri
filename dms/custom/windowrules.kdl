@@ -99,6 +99,7 @@ window-rule {
     match app-id="^qoder$"
     match app-id="^clash-verge$"
     match app-id="^com.danklinux.dms$"
+    match app-id="^code$"
     match app-id="^QQ$"
     match app-id="^wechat$"
     match app-id="^wechat-devtools$"
